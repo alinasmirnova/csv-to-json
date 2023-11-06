@@ -10,7 +10,8 @@ class GroupingObjectTestCase(unittest.TestCase):
             '2': '2',
             '3': '3'
         }
-        self.grouping = GroupingObject(self.obj)
+        self.grouping = GroupingObject()
+        self.grouping._add_child(self.obj)
 
     def test__add_child__same_values__keep_grouping(self):
         obj2 = {
@@ -35,8 +36,11 @@ class GroupingObjectTestCase(unittest.TestCase):
         self.assertCountEqual({'1': '1', '2': '2'}, self.grouping.common_fields)
 
     def test__add_child_new_field_raise(self):
-        with self.assertRaises(KeyError):
-            self.grouping._add_child({'1': '1', '2': '2'})
+        obj2 = {'1': '1', '2': '2'}
+        self.grouping._add_child(obj2)
+
+        self.assertCountEqual([self.obj, obj2], self.grouping.children)
+        self.assertCountEqual({'1': '1', '2': '2'}, self.grouping.common_fields)
 
 
 if __name__ == '__main__':
