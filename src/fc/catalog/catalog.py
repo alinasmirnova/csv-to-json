@@ -31,4 +31,11 @@ class Catalog(GroupingObject):
         self._add_child(article.to_dictionary())
 
     def to_dictionary(self) -> Dict[str, str | List]:
-        return self._to_dictionary('Articles')
+        def not_empty(pair):
+            _, value = pair
+            return value != '' and value != []
+
+        res = self._to_dictionary('Articles')
+        res = dict(filter(not_empty, res.items()))
+
+        return res
