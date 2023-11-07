@@ -9,14 +9,14 @@ class GroupingObject:
         self.common_fields = {}
 
     def _add_child(self, obj: Dict[str, str]):
-        def differs_from_obj(pair):
+        def equal_to_obj(pair):
             key, value = pair
             return key in obj and obj[key] == value
 
         if len(self.children) == 0:
             self.common_fields = obj.copy()
         else:
-            self.common_fields = dict(filter(differs_from_obj, self.common_fields.items()))
+            self.common_fields = dict(filter(equal_to_obj, self.common_fields.items()))
 
         self.children.append(obj)
 
