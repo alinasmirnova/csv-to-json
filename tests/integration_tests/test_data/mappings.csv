@@ -22,3 +22,5 @@ EU|42;European size 42;size_group_code|size_code;size
 4;Indaco Nero;color_code;color
 5;Fucile;color_code;color
 6;Bosco Nero;color_code;color
+;;price_buy_net|currency;price_buy_net
+;;price_sell|currency;price_sell
