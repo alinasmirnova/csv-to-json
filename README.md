@@ -12,4 +12,9 @@ There are two ways to calculate article number according to the task:
 
 I've chosen the first option as a more straightforward one. But there are ways to switch to the second option:
 1. Use the fields combination rule to combine article numbers into one entity
-2. Change method ```Variation.get_article_number``` logic to combine all articles number only for grouping variations (they'll still be separate article fields) 
+2. Change method ```Variation.get_article_number``` logic to combine all articles number only for grouping variations 
+(they'll still be separate article fields)
+
+# Output
+Main entry point for creating catalog is ```CatalogBuilder.build_catalog```. Method returns catalog as a dictionary 
+that can be converted to json or used as a field for another data contract
