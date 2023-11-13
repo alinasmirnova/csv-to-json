@@ -7,5 +7,5 @@ pricat = input()
 
 res = CatalogBuilder.build_catalog(pricat_file_name=pricat, mappings_file_name=mapping)
 
-print('Result catalog is:')
+print('Result catalog_tests is:')
 pprint.pprint(res)

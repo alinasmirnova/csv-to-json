@@ -10,7 +10,7 @@ class CatalogBuilder:
     @staticmethod
     def _build_catalog(objects: List[Variation]) -> Dict:
         if len(objects) == 0:
-            raise ValueError("Can't create catalog without variations")
+            raise ValueError("Can't create catalog_tests without variations")
 
         articles = {}
         for obj in objects:
