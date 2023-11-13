@@ -1,7 +1,7 @@
 import unittest
 
-from src.fc.io.csv_reader import read_csv
-from src.fc.io.exceptions import WrongFileFormatError
+from src.io import read_csv
+from src.io.exceptions import WrongFileFormatError
 
 
 class CsvReaderTestCase(unittest.TestCase):

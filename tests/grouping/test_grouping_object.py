@@ -1,6 +1,6 @@
 import unittest
 
-from src.fc.grouping.grouping_object import GroupingObject
+from src.grouping import GroupingObject
 
 
 class GroupingObjectTestCase(unittest.TestCase):

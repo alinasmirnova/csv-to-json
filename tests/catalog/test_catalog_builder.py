@@ -1,7 +1,7 @@
 import unittest
 
-from src.fc.catalog.catalog import Variation
-from src.fc.catalog.catalog_builder import CatalogBuilder
+from src.catalog import Variation
+from src.catalog import CatalogBuilder
 
 
 class CatalogBuilderTestCase(unittest.TestCase):

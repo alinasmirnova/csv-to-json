@@ -1,9 +1,9 @@
 import unittest
 
-from src.fc.mapping.field_mappers import (AsIsFieldMapper, OneToOneFieldMapper, JoinManyToOneFieldMapper,
-                                          ManyToOneFieldMapper)
-from src.fc.mapping.object_mapper import ObjectMapper
-from src.fc.mapping.rule import Rule
+from src.mapping.field_mappers import (AsIsFieldMapper, OneToOneFieldMapper, JoinManyToOneFieldMapper,
+                                       ManyToOneFieldMapper)
+from src.mapping.object_mapper import ObjectMapper
+from src.mapping import Rule
 
 
 class ObjectMapperTestCase(unittest.TestCase):

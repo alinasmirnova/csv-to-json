@@ -1,6 +1,6 @@
 import unittest
 
-from src.fc.mapping.field_mappers import AsIsFieldMapper, OneToOneFieldMapper, JoinManyToOneFieldMapper, ManyToOneFieldMapper
+from src.mapping.field_mappers import AsIsFieldMapper, OneToOneFieldMapper, JoinManyToOneFieldMapper, ManyToOneFieldMapper
 
 
 class AsIsFieldMapperTestCase(unittest.TestCase):
