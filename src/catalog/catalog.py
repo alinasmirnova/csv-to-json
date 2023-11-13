@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 from typing import Dict, List
-from src.fc.grouping.grouping_object import GroupingObject
+from ..grouping.grouping_object import GroupingObject
 
 
 class Variation(dict):

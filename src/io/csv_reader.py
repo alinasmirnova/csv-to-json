@@ -1,7 +1,7 @@
 import csv
 from typing import List, Dict
 
-from src.fc.io.exceptions import WrongFileFormatError
+from .exceptions import WrongFileFormatError
 
 
 def read_csv(filename: str) -> List[Dict[str, str]]:

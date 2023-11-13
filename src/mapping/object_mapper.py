@@ -1,7 +1,7 @@
 from typing import Dict, List
 
-from src.fc.mapping.field_mappers import FieldMapper, AsIsFieldMapper
-from src.fc.mapping.rule import Rule
+from .field_mappers import FieldMapper, AsIsFieldMapper
+from .rule import Rule
 
 
 class ObjectMapper:

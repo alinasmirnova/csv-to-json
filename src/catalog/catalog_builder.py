@@ -1,9 +1,9 @@
-from src.fc.catalog.catalog import Catalog, Variation, Article
+from .catalog import Catalog, Variation, Article
 from typing import Dict, List
 
-from src.fc.io.csv_reader import read_csv
-from src.fc.mapping.object_mapper import ObjectMapper
-from src.fc.mapping.rule import Rule
+from ..io.csv_reader import read_csv
+from ..mapping.object_mapper import ObjectMapper
+from ..mapping.rule import Rule
 
 
 class CatalogBuilder:

@@ -1,5 +1,6 @@
-from src.fc.catalog.catalog_builder import CatalogBuilder
 import pprint
+
+from src.catalog.catalog_builder import CatalogBuilder
 
 mapping = input()
 pricat = input()

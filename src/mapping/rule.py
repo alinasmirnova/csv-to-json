@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict
 
-from src.fc.mapping.field_mappers import FieldMapper, JoinManyToOneFieldMapper, ManyToOneFieldMapper, OneToOneFieldMapper, \
+from .field_mappers import FieldMapper, JoinManyToOneFieldMapper, ManyToOneFieldMapper, OneToOneFieldMapper, \
     ConditionalFieldMapper
 
 
