@@ -1,6 +1,6 @@
 # Fields combination rule
 To create a mapping rule to combine multiple fields into a new field use this syntax:
-    ```commandline
+    ```
     ;;sourse_type1|souce_type2;destination
     ```
   You can find an example in ```./tests/integration_tests/test_data/mappings.csv```
@@ -18,3 +18,6 @@ I've chosen the first option as a more straightforward one. But there are ways t
 # Output
 Main entry point for creating catalog is ```CatalogBuilder.build_catalog```. Method returns catalog as a dictionary 
 that can be converted to json or used as a field for another data contract
+
+# Run tests
+To run unit tests run ```py -m unittest discover``` in the project root directory (csv-to-json)
