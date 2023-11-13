@@ -82,6 +82,14 @@ class CatalogBuilderTestCase(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test__build_catalog_integration_test(self):
+        actual = CatalogBuilder.build_catalog('test_data/pricat.csv', 'test_data/mappings.csv')
+
+        with open('../catalog/test_data/expected.json') as file:
+            expected = json.load(file)
+            self.maxDiff = None
+            self.assertCountEqual(expected, actual)
+
 
 if __name__ == '__main__':
     unittest.main()
