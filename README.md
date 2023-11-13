@@ -1,8 +1,9 @@
 # Fields combination rule
 To create a mapping rule to combine multiple fields into a new field use this syntax:
-    ```
+    
+```
     ;;sourse_type1|souce_type2;destination
-    ```
+```
   You can find an example in ```./tests/integration_tests/test_data/mappings.csv```
 
 # Article number
