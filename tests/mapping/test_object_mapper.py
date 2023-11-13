@@ -3,7 +3,7 @@ import unittest
 from src.mapping.field_mappers import (AsIsFieldMapper, OneToOneFieldMapper, JoinManyToOneFieldMapper,
                                        ManyToOneFieldMapper)
 from src.mapping.object_mapper import ObjectMapper
-from src.mapping import Rule
+from src.mapping.rule import Rule
 
 
 class ObjectMapperTestCase(unittest.TestCase):

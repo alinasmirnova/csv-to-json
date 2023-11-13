@@ -1,7 +1,7 @@
+import json
 import unittest
-
-from src.catalog import Variation
-from src.catalog import CatalogBuilder
+from src.catalog.catalog import Variation
+from src.catalog.catalog_builder import CatalogBuilder
 
 
 class CatalogBuilderTestCase(unittest.TestCase):

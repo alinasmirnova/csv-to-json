@@ -1,6 +1,6 @@
 import unittest
 
-from src.io import read_csv
+from src.io.csv_reader import read_csv
 from src.io.exceptions import WrongFileFormatError
 
 
